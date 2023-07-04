@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import images from './image.js';
+import Auth from './auth';
 
 import { useState, useEffect } from 'react';
 import Thumbnail from './thumbnail.js';
@@ -108,7 +109,8 @@ function App() {
           return <div key={index} className={currentImageIndex === index ? 'active-dot' : 'dot'}
            onClick={() => handledot(index)}>O</div>
         })}</div>
-
+<hr/>
+<Auth/>
     </>
   
   );
